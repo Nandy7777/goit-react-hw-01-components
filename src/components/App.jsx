@@ -1,4 +1,5 @@
-import Profile from '../components/Profile/profile';
+import Profile from 'components/Profile/profile';
+import Statistics from 'components/Statistics/statistics'
 import user from 'components/user.json';
 import data from 'components/data.json';
 
@@ -13,7 +14,6 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
     </div>
 
     // <div
