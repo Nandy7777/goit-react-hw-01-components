@@ -12,13 +12,16 @@ export default function FriendList({ friends }) {
                 isOnline={friend.isOnline}
             />
         ))}
-    </ul>
+        </ul>
     )
 }
+
 FriendList.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 
