@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
-
+import { Wrapper, Avatar, Name, Tag, Stats } from './profile.styled';
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <div class="profile">
+    <Wrapper>
       <div class="description">
-        <img src={avatar} alt={username} class="avatar" />
-        <p class="name">{username}</p>
-        <p class="tag">@{tag}</p>
-        <p class="location">{location}</p>
+        <Avatar src={avatar} alt={username} />
+        <Name>{username}</Name>
+        <Tag>@{tag}</Tag>
+        <Tag>{location}</Tag>
       </div>
 
-      <ul class="stats">
+      <Stats>
         <li>
           <span class="label">Followers</span>
           <span class="quantity">{stats.followers}</span>
@@ -23,8 +23,8 @@ export default function Profile({ username, tag, location, avatar, stats }) {
           <span class="label">Likes</span>
           <span class="quantity">{stats.likes}</span>
         </li>
-      </ul>
-    </div>
+      </Stats>
+    </Wrapper>
   );
 };
 
