@@ -3,17 +3,17 @@ import FriendListItem from '../FriendListItem/friendListItem'
 
 export default function FriendList({ friends }) {
     return (
-        <ul class="friend-list">
-        {friends.map(friend => (
-            <FriendListItem
-                key={friend.id}
-                avatar={friend.avatar}
-                name = {friend.name}
-                isOnline={friend.isOnline}
-            />
+      <ul class="friend-list">
+        {friends.map(({ id, avatar, name, isOnline }) => (
+          <FriendListItem
+            key={id}
+            avatar={avatar}
+            name={name}
+            isOnline={isOnline}
+          />
         ))}
-        </ul>
-    )
+      </ul>
+    );
 }
 
 FriendList.propTypes = {
