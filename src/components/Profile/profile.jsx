@@ -9,16 +9,17 @@ import {
   StatsLabel,
   Location,
   StatsQuantity,
+  Description,
 } from './profile.styled';
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
     <Wrapper>
-      <div class="description">
+      <Description>
         <Avatar src={avatar} alt={username} />
         <Name>{username}</Name>
         <Tag>@{tag}</Tag>
         <Location>{location}</Location>
-      </div>
+      </Description>
 
       <Stats>
         <StatsItem>

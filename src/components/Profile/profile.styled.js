@@ -4,8 +4,13 @@ export const Wrapper = styled.div`
   border-radius: 5px;
   width: 250px;
   text-align: center;
+  margin: 30px auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+`;
+
+export const Description = styled.div`
+  text-align: center;
 `;
 
 export const Avatar = styled.img`
