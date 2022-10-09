@@ -8,6 +8,7 @@ import {
   StatsItem,
   StatsLabel,
   Location,
+  StatsQuantity,
 } from './profile.styled';
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
@@ -22,15 +23,15 @@ export default function Profile({ username, tag, location, avatar, stats }) {
       <Stats>
         <StatsItem>
           <StatsLabel>Followers</StatsLabel>
-          <span class="quantity">{stats.followers}</span>
+          <StatsQuantity>{stats.followers}</StatsQuantity>
         </StatsItem>
         <StatsItem>
           <StatsLabel>Views</StatsLabel>
-          <span class="quantity">{stats.views}</span>
+          <StatsQuantity>{stats.views}</StatsQuantity>
         </StatsItem>
         <StatsItem>
           <StatsLabel>Likes</StatsLabel>
-          <span class="quantity">{stats.likes}</span>
+          <StatsQuantity>{stats.likes}</StatsQuantity>
         </StatsItem>
       </Stats>
     </Wrapper>
