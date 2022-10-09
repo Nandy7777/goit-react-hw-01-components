@@ -1,5 +1,14 @@
 import PropTypes from 'prop-types';
-import { Wrapper, Avatar, Name, Tag, Stats } from './profile.styled';
+import {
+  Wrapper,
+  Avatar,
+  Name,
+  Tag,
+  Stats,
+  StatsItem,
+  StatsLabel,
+  Location,
+} from './profile.styled';
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
     <Wrapper>
@@ -7,22 +16,22 @@ export default function Profile({ username, tag, location, avatar, stats }) {
         <Avatar src={avatar} alt={username} />
         <Name>{username}</Name>
         <Tag>@{tag}</Tag>
-        <Tag>{location}</Tag>
+        <Location>{location}</Location>
       </div>
 
       <Stats>
-        <li>
-          <span class="label">Followers</span>
+        <StatsItem>
+          <StatsLabel>Followers</StatsLabel>
           <span class="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span class="label">Views</span>
+        </StatsItem>
+        <StatsItem>
+          <StatsLabel>Views</StatsLabel>
           <span class="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span class="label">Likes</span>
+        </StatsItem>
+        <StatsItem>
+          <StatsLabel>Likes</StatsLabel>
           <span class="quantity">{stats.likes}</span>
-        </li>
+        </StatsItem>
       </Stats>
     </Wrapper>
   );
