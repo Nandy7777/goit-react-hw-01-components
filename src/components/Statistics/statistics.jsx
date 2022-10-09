@@ -4,6 +4,8 @@ import {
   StatsTitle,
   StatsList,
   StatsItem,
+  StatsLabel,
+  StatsPercentage,
 } from './statistics.styled';
 
 export default function Statistics({ title, stats }) {
@@ -14,8 +16,8 @@ export default function Statistics({ title, stats }) {
         <StatsList>
           {stats.map(({ id, label, percentage }) => (
             <StatsItem key={id}>
-              <span className ="label">{label}</span>
-              <span className ="percentage">{percentage}%</span>
+              <StatsLabel>{label}</StatsLabel>
+              <StatsPercentage>{percentage}%</StatsPercentage>
             </StatsItem>
           ))}
         </StatsList>
