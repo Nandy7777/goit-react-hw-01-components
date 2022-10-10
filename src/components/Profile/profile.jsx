@@ -10,7 +10,7 @@ import {
   Location,
   StatsQuantity,
   Description,
-} from './profile.styled';
+} from './Profile.styled';
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
     <Wrapper>

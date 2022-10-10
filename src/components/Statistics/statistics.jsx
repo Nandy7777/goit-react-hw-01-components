@@ -6,7 +6,7 @@ import {
   StatsItem,
   StatsLabel,
   StatsPercentage,
-} from './statistics.styled';
+} from './Statistics.styled';
 
 export default function Statistics({ title, stats }) {
     return (

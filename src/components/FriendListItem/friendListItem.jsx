@@ -4,7 +4,7 @@ import {
   FrendStatus,
   FriendAvatar,
   FrienName,
-} from './friendListItem.styled';
+} from './FriendListItem.styled';
 
 export default function FriendListItem({ avatar, name, isOnline }) {
     return (
