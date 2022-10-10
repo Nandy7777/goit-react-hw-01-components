@@ -26,5 +26,3 @@ FriendList.propTypes = {
     })
   ),
 };
-
-
